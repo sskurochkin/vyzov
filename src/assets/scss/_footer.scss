@@ -1,0 +1,44 @@
+@import 'utils/vars';
+
+
+.footer {
+	background-color: $c-footer;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	color: #fff;
+
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@media(max-width: $xs - 1) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&-left{
+		@media(max-width: $xs - 1){
+			text-align: center;
+				}
+
+	}
+
+	&-mid {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@media(max-width: $xs - 1){
+			margin: 20px 0;
+				}
+
+		p {
+			font-size: 28px;
+			color: $c-primary;
+			margin-bottom: 16px;
+		}
+
+		&__politics {
+			font-size: 14px;
+		}
+	}
+}

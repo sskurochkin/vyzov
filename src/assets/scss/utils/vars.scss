@@ -1,0 +1,60 @@
+//- Grid
+//точки смены устройств
+// $xxl: 1680px;
+$xl: 1700px;
+$lg: 1340px;
+$md: 1100px;
+$sm: 768px;
+$xs: 576px;
+//ширины контейнеров
+// $xxl-container: 1670px;
+$xl-container: 1620px;
+$lg-container: 1100px;
+$md-container: 1024px;
+$sm-container: 768px;
+$xs-container: 100%;
+$container-max-widths: (xs: 100%, sm: $sm-container, md: $md-container, lg: $lg-container, xl: $xl-container,);
+$grid-breakpoints: (xs: 0, sm: $sm, md: $md, lg: $lg, xl: $xl,);
+// 1/2 отступа между колонками
+$grid-gutter-width: 20px;
+//количество колонок сетки Добавить!
+$grid-columns: 10;
+// Fonts
+//$f-size: 16px;//base -> 1rem
+$f-size: 16px;
+$f-main: 'OpenSans',
+Arial,
+Verdana,
+sans-serif;
+$f-sec: 'OpenSans', Arial, Verdana, sans-serif;
+
+
+// Colors
+$bg-main: #fff;
+$bg-hover: #f8f8f8;
+$c-hr: #ccc;
+$bg-inc-mark: #ff9;
+$c-sec: #d15645;
+//цвета текста
+$c-text: #2B2A29;
+$c-text2: #AAAAAA;
+$c-link: #2B2A29;
+$c-gray: #F6F6F6; //цвет с вески
+$c-gray-second: #E4E4E4; //цвет с вески
+//основные цвета макета
+$c-header: #5d5c5c;
+$c-footer: #302f2f;
+$c-primary-white: #F6F6F6;
+$c-primary: #F5365C;
+$c-primary-2: #FE7235;
+$c-primary-hover: #BB282F;
+$c-error: #EB5757;
+$c-trp: transparent;
+$blue: #5E72E4;
+$dark-blue: #055795;
+$red: #E41522;
+$green: #65B360;
+$yellow: #ff7033;
+$white: #fff;
+$black: #000;
+$gray: #636363;

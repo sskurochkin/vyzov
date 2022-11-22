@@ -1,0 +1,53 @@
+header.header
+    .container
+        .header-top
+            .header-top__left
+                .header-logo
+                    a(href='#').header-logo__link
+                        img(src='./assets/img/logo.jpg')
+                        img(src='./assets/img/logo-bottom.jpg')
+                .header-descr
+                    p "ВиаМоторс"
+                    p г.п. Ждановичи
+                    p ул. Заречная, д. 50
+            a(href='mailto:nfo@viamotors.by').header-top__mid
+                .header-mail__icon.icon
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.9592 12.8301L13.2841 14.5108C12.6049 15.1924 11.4097 15.2071 10.7158 14.5108L9.04066 12.8301L3.02441 18.8659C3.24836 18.9694 3.49527 19.0312 3.75777 19.0312H20.2421C20.5046 19.0312 20.7515 18.9695 20.9753 18.8659L14.9592 12.8301Z" fill="#E41522"/>
+                    <path d="M20.2421 4.96875H3.7577C3.4952 4.96875 3.24828 5.03055 3.02441 5.1341L9.4532 11.5842C9.45363 11.5846 9.45414 11.5847 9.45457 11.5852C9.455 11.5856 9.45508 11.5862 9.45508 11.5862L11.5454 13.6834C11.7675 13.9055 12.2324 13.9055 12.4544 13.6834L14.5443 11.5865C14.5443 11.5865 14.5448 11.5856 14.5453 11.5852C14.5453 11.5852 14.5462 11.5846 14.5466 11.5842L20.9753 5.13406C20.7514 5.03047 20.5046 4.96875 20.2421 4.96875Z" fill="#E41522"/>
+                    <path d="M2.18695 5.95312C2.07109 6.18742 2 6.4475 2 6.72609V17.273C2 17.5516 2.07102 17.8116 2.18691 18.0459L8.21359 11.9997L2.18695 5.95312Z" fill="#E41522"/>
+                    <path d="M21.8127 5.95312L15.7861 11.9998L21.8127 18.0461C21.9286 17.8118 21.9997 17.5517 21.9997 17.2731V6.72617C21.9997 6.4475 21.9286 6.18742 21.8127 5.95312Z" fill="#E41522"/>
+                    </svg>
+                span info@viamotors.by
+            .header-top__schedule
+                .contacts-body__item-title Режим работы:
+                    p Пн - Пт с 10:00 до 19:00
+                    p выходные дни: Сб - Вс.
+            .header-top__right
+
+                include phones-list
+    .header-bottom
+            .container
+                nav.header-nav
+                    .burger-icon
+                        span
+                        span
+                        span
+                        span
+                    ul.header-nav__list
+                        li.header-nav__item
+                            a(href='/').header-nav__link Главная
+                        li.header-nav__item
+                            a(href='/services.html').header-nav__link Услуги СТО
+                        li.header-nav__item
+                            a(href='/add-services.html').header-nav__link Доп. услуги
+                        li.header-nav__item
+                            a(href='/price.html').header-nav__link Цены
+                        li.header-nav__item
+                            a(href='/sale.html').header-nav__link Акции
+                        li.header-nav__item
+                            a(href='/payment.html').header-nav__link Рассрочка
+                        li.header-nav__item
+                            a(href='/contacts.html').header-nav__link Контакты
+                        li.header-nav__item
+                            a(href='/about.html').header-nav__link О нас

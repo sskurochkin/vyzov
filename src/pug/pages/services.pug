@@ -1,0 +1,51 @@
+extends ../layout/base
+
+block variables
+	- var title='Оказане услуг по ремонту автомобилей |ViaMotors| Беларусь';
+	- var description='Оказане услуг по ремонту автомобилей |ViaMotors| Беларусь';
+	- var pageClass='services-page';
+
+block content
+
+	section.services-p
+		.container
+			+section-title('Услуги автосервиса')
+			.services-p__descr СТО "ВИАмоторс" осуществляет ремонт и техническое обслуживание автомобилей всех марок. Мы предоставляем широкий спектр услуг от замены тормозных колодок до капитального ремонта двигателей.
+			.services-p__wrapper
+				.services-p__card
+					.services-p__card-descr
+						include ../includes/modules/to-1
+					.services-p__card-img-wrap
+						.services-p__img
+							img(src="./assets/img/services-1.png")
+				.services-p__card
+					.services-p__card-descr
+						include ../includes/modules/to-2
+					.services-p__card-img-wrap
+						.services-p__img
+							img(src="./assets/img/services-2.jpg")
+				.services-p__card
+					.services-p__card-descr
+						include ../includes/modules/to-3
+					.services-p__card-img-wrap
+						.services-p__img
+							img(src="./assets/img/services-6.png")
+				.services-p__card
+					.services-p__card-descr
+						include ../includes/modules/to-4
+					.services-p__card-img-wrap
+						.services-p__img
+							img(src="./assets/img/services-5.jpg")
+				.services-p__card
+					.services-p__card-descr
+						include ../includes/modules/to-5
+					.services-p__card-img-wrap
+						.services-p__img
+							img(src="./assets/img/services-4.jpg")
+				.services-p__card
+					.services-p__card-descr
+						include ../includes/modules/to-6
+					.services-p__card-img-wrap
+						.services-p__img
+							img(src="./assets/img/services-3.png")
+

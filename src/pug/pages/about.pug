@@ -1,0 +1,58 @@
+extends ../layout/base
+
+block variables
+    //подключаем основу для страницы и выводим в нее данные
+    - var title='Оказане услуг по ремонту автомобилей |ViaMotors| Беларусь';
+    - var description='Оказане услуг по ремонту автомобилей |ViaMotors| Беларусь';
+    - var pageClass='about-page';
+block styles
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
+block content
+
+    section.about
+        .container
+            +section-title('О нас')
+            .about-content
+                p Автосервис "ВИАмоторс" - это современная станция технического обслуживания (СТО), специализирующаяся на ремонте и обслуживании автомобилей марок иностранного производства.
+                p Мы молодая и амбициозная команда специалистов с многолетним опытом в области ремонта и обслуживания автомобилей различного класса.
+                p Наши мастера занимаются ремонтом и обслуживанием автомобилей немало лет и наработали большой профессиональный опыт, поэтому доверяя свой автомобиль нам, Вы можете быть уверены, что работа будет выполнена качественно, а Вы обеспечены спокойствием за рулём!
+                p Для обслуживания Вашего автомобиля мы используем только проверенную временем продукцию лучших мировых производителей запасных частей и смазочных материалов. Наша команда подберёт все необходимые для ремонта запасные части, а также предложит на выбор несколько вариантов, из которых сможете выбрать наиболее подходящий для Вас по цене и качеству.
+                p Мы любим радовать наших клиентов всевозможными акциями и рекламными мероприятиями. Это позволяет нашим клиентам экономить свои деньги и получать услуги и товары по еще более выгодным ценам. Все это показывает, что мы ценим наших клиентов.
+                p Приезжайте и оцените наш сервис. Или свяжитесь с нами для более подробной информации обо всех ваших проблемах.
+        .about-slider
+            .swiper
+                .swiper-wrapper
+                    .swiper-slide
+                        .img-wrap
+                            img(src='/assets/img/slider-5.webp' data-fancybox="gallery")
+                    .swiper-slide
+                        .img-wrap
+                            img(src='/assets/img/slider-2.webp' data-fancybox="gallery")
+                    .swiper-slide
+                        .img-wrap
+                            img(src='/assets/img/slider-3.webp' data-fancybox="gallery")
+                    .swiper-slide
+                        .img-wrap
+                            img(src='/assets/img/slider-4.webp' data-fancybox="gallery")
+                    .swiper-slide
+                        .img-wrap
+                            img(src='/assets/img/slider-6.webp' data-fancybox="gallery")
+                    .swiper-slide
+                        .img-wrap
+                            img(src='/assets/img/slider-7.webp' data-fancybox="gallery")
+                    .swiper-slide
+                        .img-wrap
+                            img(src='/assets/img/slider-8.webp' data-fancybox="gallery")
+                    .swiper-slide
+                        .img-wrap
+                            img(src='/assets/img/slider-9.webp' data-fancybox="gallery")
+                .swiper-pagination
+                .swiper-button-prev
+                .swiper-button-next
+
+
+block script
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" ></script>

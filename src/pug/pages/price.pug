@@ -1,0 +1,126 @@
+extends ../layout/base
+
+block variables
+	- var title='Оказане услуг по ремонту автомобилей |ViaMotors| Беларусь';
+	- var description='Оказане услуг по ремонту автомобилей |ViaMotors| Беларусь';
+	- var pageClass='price-page';
+
+block content
+
+	section.price
+		.container
+			+section-title('Цены')
+			.price-wrapper
+
+				.price-descr <b>ВИАмоторс</b> предлагает ремон автомобилей по доступным ценам. Нижк преведена таблица с ориентировочной стоимостью услуг, поскольку она зависит от марки и года автомобиля. Сообщив нам, Вы узнаете точную стоимость ремонта вашего автомобиля <b>и при этом  будете приятно удивлены!</b>
+				.price-img
+					.price-img__wrap
+						img(src='/assets/img/price.png')
+			.price-table
+				include ../includes/modules/table
+
+				.table
+					.table__title ЦЕНЫ НА ШИНОМоНТАЖ
+
+					.price-table__table
+
+
+						.table__body
+							.table-row.table__header
+								.table-name Вид работ
+								.table-value
+									.table-value__item R13-R14
+									.table-value__item R15-R16
+									.table-value__item R17-R18
+									.table-value__item R19-R20
+									.table-value__item R21
+									.table-value__item Микроавт. или мар-ка С
+									.table-value__item Джип до R17
+									.table-value__item Джип R18-R21
+									.table-value__item Шины типа Ran Flat, rsc, ngs
+
+							.table-row
+								.table-name Демонтаж
+								.table-value
+									.table-value__item 2
+									.table-value__item 3
+									.table-value__item 3,5
+									.table-value__item 4
+									.table-value__item 4,5
+									.table-value__item 4
+									.table-value__item 3,5
+									.table-value__item 4
+									.table-value__item 6
+							.table-row
+								.table-name Монтаж
+								.table-value
+									.table-value__item 2
+									.table-value__item 3
+									.table-value__item 3,5
+									.table-value__item 4
+									.table-value__item 4,5
+									.table-value__item 4
+									.table-value__item 3,5
+									.table-value__item 4
+									.table-value__item 6
+							.table-row
+								.table-name Балансировка
+								.table-value
+									.table-value__item 5
+									.table-value__item 5
+									.table-value__item 6
+									.table-value__item 7
+									.table-value__item 8
+									.table-value__item 8
+									.table-value__item 7
+									.table-value__item 8
+									.table-value__item 8
+							.table-row
+								.table-name Снятие колеса/Установка колеса
+								.table-value
+									.table-value__item 3
+									.table-value__item 3
+									.table-value__item 3
+									.table-value__item 3
+									.table-value__item 3
+									.table-value__item 4
+									.table-value__item 4
+									.table-value__item 4
+									.table-value__item 4
+
+							.table-row
+								.table-name Переобувка 1-ого колеса без снятия с автомобиля
+								.table-value
+									.table-value__item 9
+									.table-value__item 11
+									.table-value__item 13
+									.table-value__item 15
+									.table-value__item 17
+									.table-value__item 16
+									.table-value__item 14
+									.table-value__item 16
+									.table-value__item 20
+							.table-row
+								.table-name Переобувка 1-ого колеса со снятием с автомобиля
+								.table-value
+									.table-value__item 12
+									.table-value__item 14
+									.table-value__item 16
+									.table-value__item 18
+									.table-value__item 20
+									.table-value__item 20
+									.table-value__item 18
+									.table-value__item 20
+									.table-value__item 24
+							.table-row
+								.table-name Полная переобувка автомобиля (без стоимости расходных материалов)
+								.table-value
+									.table-value__item 48
+									.table-value__item 56
+									.table-value__item 64
+									.table-value__item 72
+									.table-value__item 80
+									.table-value__item 80
+									.table-value__item 72
+									.table-value__item 80
+									.table-value__item 96
