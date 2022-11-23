@@ -8,39 +8,3 @@ mixin section-title(title)
         h2=title
 
 
-mixin to-list(args={})
-    .to-item
-        .to__title
-            span=args.title
-            span.to-icon
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.22162 8.37225C4.56832 7.94234 5.19788 7.87489 5.62779 8.22159L9.96503 11.7194L14.3784 8.21671C14.811 7.87338 15.44 7.94574 15.7833 8.37834C16.1267 8.81094 16.0543 9.43996 15.6217 9.78329L10.5817 13.7833C10.2153 14.0741 9.69636 14.072 9.33228 13.7784L4.37228 9.77841C3.94238 9.43172 3.87492 8.80215 4.22162 8.37225Z" fill="#E41522"/></svg>
-        ul.to-list
-            each item in args.list
-                li.to-list__item
-                    span=item.name
-
-
-mixin table(args= {}, title)
-    .table
-        if(title)
-            .table__title=title
-        .table__header.table-row
-            .table-cell
-                |Наименование работ
-            .table-cell
-                |Цена, от (бел.руб)
-        .table__body
-            each item in args.list
-                if(item.subtitle)
-                    .table-row.table-row--subtitle
-                        span=item.subtitle
-                    .table-row
-                        .table-cell=item.name
-                        if(item.value)
-                            .table-cell=item.value
-                else
-                    .table-row
-                        .table-cell=item.name
-                        if(item.value)
-                            .table-cell=item.value
-

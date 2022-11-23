@@ -4,7 +4,7 @@ import "./assets/scss/main.scss";
 
 
 import './js/burger.js'
-import './js/to-list.js'
+
 import './js/swiper.js'
 
 //

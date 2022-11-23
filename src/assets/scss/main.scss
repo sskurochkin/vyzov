@@ -7,7 +7,6 @@
 @import "utils/_functions";
 @import "components/_box-social.scss";
 @import "components/_gallery.scss";
-@import "components/_review.scss";
 //@import "smart-grid";
 
 
@@ -279,10 +278,4 @@ section {
 
 @import 'header';
 @import 'footer';
-@import 'components/services-p';
-@import 'components/add-services-p';
-@import 'components/sale';
-@import 'components/price';
-@import 'components/payment';
-@import 'components/contacts';
-@import 'components/about';
+
