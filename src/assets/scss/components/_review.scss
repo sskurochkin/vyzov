@@ -1,0 +1,24 @@
+.review-wrapper{
+	display: flex;
+}
+
+.review-card {
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: rgb(38, 122, 239);
+	width: 20%;
+	margin-right: 10px;
+	&:last-child{
+		margin-right: 0;
+	}
+	&__descr {
+		text-align: center;
+		padding: 10px;
+		text-size: 2rem;
+	}
+	&__text-title {
+		font-size: 1rem;
+	}
+
+}
+
