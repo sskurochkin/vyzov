@@ -3,7 +3,13 @@
 .box-social {
 	&__list{
 		display: flex;
-		justify-content: space-between;
-	}
 
+	}
+	&__li{
+		margin-right: 32px;
+		width: 40px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
 }

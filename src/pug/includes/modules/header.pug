@@ -1,18 +1,26 @@
 header.header
-    .container
-        .header-top
-            .header-top__left
-                .header-logo
-                    a(href='#').header-logo__link
-                        img(src='./assets/img/logo.jpg')
-                .header-descr
-                    p 
-                    p 
-                    p 
-                .header-mail__icon.icon
+	.container
+		.header-top
+			.header-top__left
+				.header-logo
+					a(href='#').header-logo__link
+						img(src='../../assets/img/logo-g.svg')
+			.header-top__schedule
+				.header-name
+					p ВЫЗОВ
+			.header-top__right
+				include box-social
+		.header-bottom
+			.header-nav 
+				nav.scrollto
+					ul.header-nav__list 
+						li 
+							a.header-nav__li.scrollto(href="#program") Программа
+						li 
+							a.header-nav__li.scrollto(href="#review") Отзывы
+						li 
+							a.header-nav__li.scrollto(href="#gallery") Галерея
+						li 
+							a.header-nav__li.scrollto(href="#form") Заявка
 
-            .header-top__schedule
-                .contacts-body__item-title
-                    p Вызов
-            .header-top__right
-                include box-social 
+

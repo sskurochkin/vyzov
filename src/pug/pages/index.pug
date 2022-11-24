@@ -1,39 +1,41 @@
 extends ../layout/base
 
-block variables
-	- var title='Оказане услуг по ремонту автомобилей |ViaMotors| Беларусь';
-	- var description='Оказане услуг по ремонту автомобилей |ViaMotors| Беларусь';
-	- var pageClass='index-page';
-
 block content
 
-	section.index-hero
+	section.main-img
 		.container
-			.index-hero__content
-				.index-hero__desc
+			.main-img__content
+				.box
+					.box__left
+						p.box__title Ближайщий старт
+						p.box__text-bg 23.10.2000
 
-	section.services
+					.box__center
+
+					.box__right
+						p.box__title Участвовало
+						p.box__text-bg 130
+						p.box__text бойцов
+
+	section.program#program
 		.container
 			+section-title('В программе лагеря')
-			.services-wrapper
 
-	section.benefits
+
+	section.review#review
 		.container
 			+section-title('Отзывы')
 			include ../../pug/includes/modules/review
 
-	section.gallery
+	section.gallery#gallery
 		.container
 			+section-title('Галерея')
 			.gallery
 				include ../../pug/includes/modules/gallery
 
-	section.auto
+	section.form#form
 		.container
 			+section-title("Заявка на участие")
-			.auto-content
-				.auto-wrapper
-					.auto__img-wrap
 
 
 

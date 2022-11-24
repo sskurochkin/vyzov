@@ -1,37 +1,16 @@
-.review-wrapper
-	.review-card
-		.review-card__img-wrap
-			.review-card__img
-				img(src='/assets/img/review/img-review.jpg')
-		.review-card__descr
-			p.review-card__text-title Андрей Липский
-			p.review-card__text-age 32 года
-	.review-card
-		.review-card__img-wrap
-			.review-card__img
-				img(src='/assets/img/review/img-review.jpg')
-		.review-card__descr
-			p.review-card__text-title Андрей Липский
-			p.review-card__text-age 32 года
-	.review-card
-		.review-card__img-wrap
-			.review-card__img
-				img(src='/assets/img/review/img-review.jpg')
-		.review-card__descr
-			p.review-card__text-title Андрей Липский
-			p.review-card__text-age 32 года
-	.review-card
-		.review-card__img-wrap
-			.review-card__img
-				img(src='/assets/img/review/img-review.jpg')
-		.review-card__descr
-			p.review-card__text-title Андрей Липский
-			p.review-card__text-age 32 года
-	.review-card
-		.review-card__img-wrap
-			.review-card__img
-				img(src='/assets/img/review/img-review.jpg')
-		.review-card__descr
-			p.review-card__text-title Андрей Липский
-			p.review-card__text-age 32 года
-	
+mixin brand-card(args={})
+	.brand-card-wrap
+		.brand-card
+				img(class="img" src="../../assets/img/review/img-review.jp", alt="")
+				.brand-card__content
+					.brand-card__back
+						.brand-card__title Андрей Липский <br>32 года</br>
+						.brand-card__descr Американская корпорация, производитель персональных и планшетных компьютеров, аудиоплееров, смартфонов, программного обеспечения. Один из пионеров в области персональных компьютеров и современных многозадачных.
+
+.brands-list
+	.container
+		.brands-list__inner
+			+brand-card({
+				
+			})
+

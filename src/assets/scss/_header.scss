@@ -1,19 +1,24 @@
 @import 'utils/vars';
 @import 'components/burger';
 
+$a-color: #364037;
+$b-color: #976c42;
+$c-color: #f3dec8;
+
 .header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 100;
-	background-color: rgb(251, 129, 129);
+	background-color: $a-color;
 
 	&-top {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding-top: 20px;
+		padding-bottom: 20px;
 		@media(max-width: $sm - 1) {
 			padding: 10px 0;
 		}
@@ -25,9 +30,7 @@
 				p{
 					color: $c-primary;
 					text-transform: none;
-					&:first-child{
-						margin-top: 5px;
-					}
+
 				}
 			}
 			@media (max-width: $lg - 1) {
@@ -67,19 +70,16 @@
 			}
 		}
 	}
-
-	&-descr {
-		align-self: flex-start;
+	&-name{
+		color:#fff ;
+		font-size: 3rem;
+		letter-spacing: 40px;
 	}
-
 	&-logo {
 		//flex: 0 0 200px;
 		&__link {
 			max-width: 200px;
 			display: flex;
-			flex-direction: column;
-			align-items: center;
-			overflow: hidden;
 			@media(max-width: $sm - 1) {
 				max-width: 140px;
 			}
@@ -88,7 +88,6 @@
 				width: 100%;
 				height: 100%;
 				object-fit: contain;
-
 				&:last-child {
 					@media(max-width: $sm - 1) {
 						display: none;
@@ -103,18 +102,14 @@
 	}
 
 	&-bottom {
-		background-color: $c-header;
+
 
 	}
 
 	&-nav {
 		position: relative;
-		height: 80px;
-		display: flex;
-		justify-content: space-between;
+		height: 40px;
 		align-items: center;
-		color: #fff;
-		font-size: 18px;
 		@media(max-width: $xl - 1) {
 			font-size: 16px;
 		}
@@ -136,10 +131,10 @@
 		&__list {
 			display: flex;
 			width: 100%;
-			justify-content: space-between;
+			justify-content: space-around;
 			-webkit-column-gap: 40px;
 			-moz-column-gap: 40px;
-			column-gap: 40px;
+			column-gap: 100px;
 			@media(max-width: $xl - 1) {
 				-webkit-column-gap: 32px;
 				-moz-column-gap: 32px;
@@ -170,52 +165,15 @@
 
 		}
 
-		&.active {
-			//margin: 0 -10px;
-			//padding: 0 10px;
-			.burger-icon {
-				//margin-left: 10px;
-			}
-
-			.header-nav__list {
-				visibility: visible;
-				opacity: 1;
-				transform: translateX(0);
-
-				&:before {
-					content: '';
-					width: 130%;
-					height: 100%;
-					background-color: $c-header;
-					position: absolute;
-					display: block;
-					left: -50px;
-					z-index: -1;
-				}
+		&__li{
+			color: #fff;
+			font-size: 18px;
+			font-weight: 600;
+			&:hover{
+				color:$c-color;
+				transition: 0.5s;
 			}
 		}
 
-		&__item {
-			display: flex;
-			align-items: center;
-			@media(max-width: $sm - 1) {
-				padding: 5px;
-				transition: all ease .3s;
-				&:hover {
-					background-color: #6d6d6d;
-				}
-			}
-		}
-
-		&__link {
-			padding: 5px 10px;
-			@media(max-width: $md - 1) {
-				padding: 5px;
-			}
-			@media(max-width: $sm - 1) {
-				padding: 5px;
-				width: 100%;
-			}
-		}
 	}
 }

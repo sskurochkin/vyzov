@@ -1,16 +1,18 @@
 @import 'utils/vars';
 
+$a-color: #364037;
+$b-color: #976c42;
+$c-color: #f3dec8;
 
 .footer {
-	background-color: $c-footer;
+	background-color: $a-color;
 	padding-top: 40px;
-	padding-bottom: 60px;
-	color: #fff;
+	padding-bottom: 40px;
 
 	&-wrapper {
 		display: flex;
 		justify-content: space-between;
-
+		align-items: center;
 		@media(max-width: $xs - 1) {
 			flex-direction: column;
 			align-items: center;
@@ -39,6 +41,21 @@
 
 		&__politics {
 			font-size: 14px;
+		}
+	}
+}
+
+.logo{
+	width: 150px;
+}
+
+.footer-right{
+	color: #fff;
+	font-size: 1rem;
+	&__phone{
+		margin-bottom: 10px;
+		&:hover{
+			color: $c-color;
 		}
 	}
 }
