@@ -7,6 +7,7 @@ import './js/burger.js';
 
 import './js/swiper.js';
 import './js/scrol.js';
+import './js/program.js';
 //
 // if (process.env.NODE_ENV !== `production`) {
 //   async function load() {
