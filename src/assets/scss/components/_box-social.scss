@@ -1,13 +1,17 @@
-@import '../utils/vars';
-
 .box-social {
 	&__list{
 		display: flex;
-
+		justify-self: space-between;
 	}
 	&__li{
 		margin-right: 32px;
 		width: 40px;
+		@media(max-width: $md - 1) {
+			margin-right: 16px;
+		}
+		@media(max-width: $sm - 1) {
+			display: none;
+		}
 		&:last-child{
 			margin-right: 0;
 		}

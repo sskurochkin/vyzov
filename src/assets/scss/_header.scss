@@ -21,20 +21,19 @@ $c-color: #f3dec8;
 		padding-bottom: 20px;
 		@media(max-width: $sm - 1) {
 			padding: 10px 0;
+		
 		}
 
-		&__schedule{
-			.contacts-body__item-title{
-				color: $c-text;
-
-				p{
-					color: $c-primary;
-					text-transform: none;
-
-				}
+		&__title{
+			color:#fff ;
+			font-size: 3rem;
+			letter-spacing: 40px;
+			@media(max-width: $md - 1) {
+				letter-spacing: 20px;
+				padding-left: 20px;
 			}
-			@media (max-width: $lg - 1) {
-				display: none;
+			@media(max-width: $sm - 1) {
+				
 			}
 		}
 
@@ -44,11 +43,6 @@ $c-color: #f3dec8;
 			-webkit-column-gap: 40px;
 			-moz-column-gap: 40px;
 			column-gap: 40px;
-			@media(max-width: $xs - 1) {
-				-webkit-column-gap: 0;
-				-moz-column-gap: 0;
-				column-gap: 0;
-			}
 		}
 
 		&__mid {
@@ -70,42 +64,25 @@ $c-color: #f3dec8;
 			}
 		}
 	}
-	&-name{
-		color:#fff ;
-		font-size: 3rem;
-		letter-spacing: 40px;
-	}
 	&-logo {
-		//flex: 0 0 200px;
 		&__link {
 			max-width: 200px;
 			display: flex;
 			@media(max-width: $sm - 1) {
 				max-width: 140px;
 			}
-
 			img {
 				width: 100%;
 				height: 100%;
 				object-fit: contain;
-				&:last-child {
-					@media(max-width: $sm - 1) {
-						display: none;
-					}
-				}
-
-				@media(max-width: $xs - 1) {
-					display: none;
-				}
 			}
 		}
 	}
-
-	&-bottom {
-
-
+	&-bottom{
+		@media(max-width: $sm - 1) {
+			display: none;
+		}
 	}
-
 	&-nav {
 		position: relative;
 		height: 40px;
@@ -119,50 +96,12 @@ $c-color: #f3dec8;
 		@media(max-width: $sm - 1) {
 			margin: 0 -10px;
 			height: 50px;
-			.burger-icon {
-				position: absolute;
-				left: 10px;
-				top: 0;
-				bottom: 0;
-				margin: auto 0;
-			}
 		}
 
 		&__list {
 			display: flex;
 			width: 100%;
 			justify-content: space-around;
-			-webkit-column-gap: 40px;
-			-moz-column-gap: 40px;
-			column-gap: 100px;
-			@media(max-width: $xl - 1) {
-				-webkit-column-gap: 32px;
-				-moz-column-gap: 32px;
-				column-gap: 32px;
-			}
-			@media(max-width: $lg - 1) {
-				-webkit-column-gap: 24px;
-				-moz-column-gap: 24px;
-				column-gap: 24px;
-			}
-			@media(max-width: $sm - 1) {
-				opacity: 0;
-				visibility: hidden;
-				flex-direction: column;
-				position: absolute;
-				z-index: 10;
-				top: 50px;
-				//left: -10px;
-				//right: -10px;
-				//padding: 0 10px;
-				width: 100%;
-				//height: calc(100vh - 10px);
-				background-color: $c-header;
-				transform: translateX(-100%);
-				transition: all ease .3s;
-
-			}
-
 		}
 
 		&__li{
@@ -175,5 +114,26 @@ $c-color: #f3dec8;
 			}
 		}
 
+	}
+}
+.box-phone{
+	color: #fff;
+	font-size:larger;
+	padding-top: 5px;
+	@media(max-width: $md - 1) {
+		
+	}
+	@media(max-width: $sm - 1) {
+		display: none;
+	}
+	&__phone{
+		margin-bottom: 5px;
+		&:last-child{
+			margin: 0;
+		}
+		&:hover{
+			transition: 0.5s;
+			color: $c-color;
+		}
 	}
 }

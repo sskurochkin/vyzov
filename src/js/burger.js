@@ -1,8 +1,18 @@
-window.addEventListener('load', function (event) {
+window.addEventListener('DOMContentLoaded', () => {
+  const menu = document.querySelector('.nav-menu'),
+  menuItem = document.querySelectorAll('.nav-menu__list-item'),
+  hamburger = document.querySelector('.hamburger');
 
-  $('.burger-icon').click(function (){
-    $(this).toggleClass('active')
-    $(this).closest('.header-nav').toggleClass('active')
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('hamburger_active');
+      menu.classList.toggle('nav-menu_active');
+      
+  });
+
+  menuItem.forEach(item => {
+      item.addEventListener('click', () => {
+          hamburger.classList.toggle('hamburger_active');
+          menu.classList.toggle('nav-menu_active');
+      })
   })
-
-});
+})
